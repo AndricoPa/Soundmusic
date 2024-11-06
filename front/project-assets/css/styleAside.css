@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1C1C1C;
+}
+.asideEsquerda {
+    position: fixed;
+    max-width: 20%;
+}
+.logo {
+    border-radius: 10px;
+}
+.navegador {
+    display: flex;
+    flex-direction: column;
+}
+.navButton {
+    margin: 0.5rem;
+    padding: 1rem;
+    transition: 1s;
+    text-decoration: none;
+}
+.navButton span {
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.navButton i {
+    color: #f1f1f1;
+    font-size: 1.5rem;
+}
+.navButton:hover {
+    background-color: #784fab;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bi-bell-fill,.bi-person-circle {
+    color: #f1f1f1;
+    font-size: 1.5rem;
+}
+.buscador {
+    position: relative;
+}
+.buscador input {
+    font-size: 1rem;
+    border-radius: 10px;
+    border: #1C1C1C 1px solid;
+    padding: 5px;
+}
+.bi-search {
+    position: absolute;
+    color: black;
+    right: 0.5rem;
+    top: 6px;
+}
+.cardPlanos,.cardSongNow,.cardPlaylist {
+    text-align: center;
+    background-color: #784fab;
+    padding: 4rem;
+    border-radius: 10px;
+    margin: 1rem;
+    cursor: pointer;
+}
+.cardPlaylist{
+    display: flex;
+    align-items: center;
+}
+.cardPlaylistImg img{
+    width: 100px;
+    border-radius: 10px;
+}
+.asideDireita {
+    position: fixed;
+    max-width: 20%;
+    right: 0;
+}
+.telaCentral {
+    max-width: 58%;
+    margin: auto;
+}

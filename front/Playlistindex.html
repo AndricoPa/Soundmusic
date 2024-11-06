@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="project-assets/css/playlist/style.css">
+    <link rel="stylesheet" href="project-assets/css/styleAside.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>PLAYLIST</title>
+</head>
+<body>
+    <aside class="asideEsquerda">
+        <img src="project-assets/img/logoRoxo.png" alt="logo da SoundMusic" class="logo">
+        <nav class="navegador">
+            <a href="index.html" class="navButton" id="home">
+                <i class="bi bi-house"></i>
+                <span>inicio</span>
+            </a>
+            <a href="#" class="navButton" id="bibliotec">
+                <i class="bi bi-book"></i>
+                <span>biblioteca</span>
+            </a>
+            <a href="Playlistindex.html" class="navButton" id="playlist">
+                <i class="bi bi-headphones"></i>
+                <span>playlist</span>
+            </a>
+            <a href="#" class="navButton" id="account">
+                <i class="bi bi-person-fill"></i>
+                <span>configurações conta</span>
+            </a>
+            <a href="http://localhost:3000/configuracao" class="navButton" id="config">
+                <i class="bi bi-gear-fill"></i>
+                <span>configurações geral</span>
+            </a>
+        </nav>
+        <div class="cardPlanos"> <!-- algo no js para identificar qual plano tem e mostrar um superior -->
+            <h1>planos</h1>
+        </div>
+    </aside>
+    <aside class="asideDireita">
+        <div class="icons">
+             <i class="bi bi-bell-fill"></i> <!-- no js fazer algo para identificar se a ou nao notificaçao e mudar o icone -->
+        <div class="buscador">
+            <i class="bi bi-search"></i>
+            <input type="text">
+         </div>
+            <i class="bi bi-person-circle"></i>
+        </div>
+        <div class="cardSongNow"> <!-- algo no js para identificar qual musica esta tocando e mostrar foto -->
+            <h1>musica tocando</h1>
+        </div>
+        <div class="cardPlaylist"> <!-- algo no js para identificar quais playlist o user contem e mostar uma ou duas delas -->
+            <div class="cardPlaylistImg">
+                <img src="project-assets/img/capaAlbum/otonokeCreepyNuts.jfif" alt="">
+            </div>
+            <div class="cardPlaylistTexto">
+                <h1>Playlist1</h1>
+            </div>
+        </div>
+    </aside>
+    <section class="telaCentral">
+        <div class="pasta">
+            <div class="foto">
+                <img src="images.png" alt="">
+            </div>
+            <h2>RITMO DAS PURA</h2>
+            <div class="icones">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="bi bi-check-circle-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="bi bi-download"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="musica">
+            <img src="images.png" alt="">
+            <div>
+                <p>Dj Arana, Dj Jeeh FDC, Mc Livinho</p>
+                <p>AMOR É MENTIRA</p>
+            </div>
+        </div>
+        <div class="musica">
+            <img src="images.png" alt="">
+            <div>
+                <p>mc kevin</p>
+                <p>DOUTORA 2</p>
+            </div>
+        </div>
+        <div class="musica">
+            <img src="images.png" alt="">
+            <div>
+                <p>Mc Ryan SP, Mc Marks, Mc Bruno MS, Mc magal, Aaron Modesto</p>
+                <p>365 DIAS (De Vida Mansa) </p>
+            </div>
+        </div>
+        <div class="musica">
+            <img src="images.png" alt="">
+            <div>
+                <p>MC Magal</p>
+                <p>IlhaBela</p>
+            </div>
+        </div>
+        <div class="musica">
+            <img src="images.png" alt=""> <span>DJ ARANA</span>
+        </div>
+        <div class="musica">
+            <img src="images.png" alt=""> <span>MC ryan sp</span>
+        </div>
+    </section>
+</body>
+</html>

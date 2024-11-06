@@ -1,0 +1,30 @@
+.telaCentral{
+    padding: 2rem;
+}
+.userTop{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #784fab;
+    border-radius: 10px;
+}
+.userImg img{
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+.username{
+    color: #f1f1f1;
+}
+.playlist{
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+.capaAlbum img{
+    border-radius: 25%;
+    margin-right: 2rem;
+    max-width: 100px;
+}
+.nomeAlbum{
+    color: #f1f1f1;
+}

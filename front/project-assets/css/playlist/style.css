@@ -1,0 +1,55 @@
+*{
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #1f1f1f;
+        
+}
+
+.pasta h2 {
+    text-align: center;
+    color: antiquewhite;
+}
+.icones ul, li , a{
+    font-size: 20px;
+    padding: 4px;
+    margin: 2px;
+    color: aliceblue;
+}
+.icones ul{
+    list-style: none;
+}
+.icones ul {
+    display: flex;
+    text-align: center;
+}
+.foto{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}
+.foto img{
+    border-radius: 12px;
+    /* box-shadow: 2px 3px 4px gold;  */
+    border: rgb(79, 19, 85) 2px solid;
+    padding: 1px;
+    height: 200px;
+}
+.musica img{
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+}
+.musica{ 
+    padding: 10px;
+    display: flex;
+    color: yellowgreen;
+}
+
+.musica span{
+    padding: 10px;
+    
+}
