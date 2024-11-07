@@ -11,8 +11,8 @@ const database = knex({
     connection: {
         host: '127.0.0.1', // <-- localhost
         port: 3306,
-        user: 'aluno',
-        password: 'senacrs',
+        user: 'root',
+        password: '158575',
         database: 'soundmusic',
     },
 });

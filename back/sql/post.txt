@@ -1,0 +1,30 @@
+user:
+{
+			"id": ,
+			"id_plano": ,
+			"username": "m",
+			"senha": "",
+			"email": ,
+			"telefone": ,
+			"foto_usuario": ""
+			"acessibilidade": 
+}
+musica:
+{
+	"id_genero": ,
+	"id_album": ,
+	"id_usuario": ,
+	"nome_musica": ,
+	"link_musica": ,
+	"foto_musica":
+}
+album:
+{
+	"id_usuario": "",
+	"nome_album": "",
+	"privado": false
+}
+genero:
+{
+	"nome_genero": ""
+}

@@ -1,7 +1,7 @@
 .telaCentral{
     padding: 2rem;
 }
-.userTop{
+#userTop{
     display: flex;
     align-items: center;
     padding: 1rem;
@@ -11,6 +11,8 @@
 .userImg img{
     border-radius: 50%;
     margin-right: 2rem;
+    width: 15rem;
+    height: 15rem;
 }
 .username{
     color: #f1f1f1;

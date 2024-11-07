@@ -11,32 +11,33 @@
 </head>
 <body>
     <aside class="asideEsquerda">
-        <img src="/project-assets/img/logoRoxo.png" alt="logo da SoundMusic" class="logo">
+        <img src="project-assets/img/logoRoxo.png" alt="logo da SoundMusic" class="logo">
         <nav class="navegador">
-            <a href="http://localhost:3000/" class="navButton" id="home">
+            <a onclick="home()" class="navButton" id="home">
                 <i class="bi bi-house"></i>
                 <span>inicio</span>
             </a>
-            <a href="#" class="navButton" id="bibliotec">
+            <a onclick="biblioteca()" class="navButton" id="bibliotec">
                 <i class="bi bi-book"></i>
                 <span>biblioteca</span>
             </a>
-            <a href="/Playlistindex.html" class="navButton" id="playlist">
+            <a onclick="playlist()" class="navButton" id="playlist">
                 <i class="bi bi-headphones"></i>
                 <span>playlist</span>
             </a>
-            <a href="#" class="navButton" id="account">
+            <a onclick="accountConfig()" class="navButton" id="account">
                 <i class="bi bi-person-fill"></i>
                 <span>configurações conta</span>
             </a>
-            <a href="#" class="navButton" id="config">
+            <a onclick="config()" class="navButton" id="config">
                 <i class="bi bi-gear-fill"></i>
                 <span>configurações geral</span>
             </a>
+            <a onclick="planos()" class="navButton" id="planos">
+                <i class="bi bi-star-fill"></i>
+                <span>ver planos</span>
+            </a>
         </nav>
-        <div class="cardPlanos"> <!-- algo no js para identificar qual plano tem e mostrar um superior -->
-            <h1>planos</h1>
-        </div>
     </aside>
     <aside class="asideDireita">
         <div class="icons">
@@ -52,7 +53,7 @@
         </div>
         <div class="cardPlaylist"> <!-- algo no js para identificar quais playlist o user contem e mostar uma ou duas delas -->
             <div class="cardPlaylistImg">
-                <img src="/project-assets/img/capaAlbum/otonokeCreepyNuts.jfif" alt="">
+                <img src="project-assets/img/capaAlbum/otonokeCreepyNuts.jfif" alt="">
             </div>
             <div class="cardPlaylistTexto">
                 <h1>Playlist1</h1>
@@ -60,13 +61,8 @@
         </div>
     </aside>
     <section class="telaCentral">
-        <div class="userTop">
-            <div class="userImg">
-                <img src="project-assets/img/capaAlbum/otonokeCreepyNuts.jfif" alt="Foto do usuario x">
-            </div>
-            <div class="username">
-                <h1>@otonoke</h1>
-            </div>
+        <div id="userTop">
+            
             </div>
         <div class="playlist">
             <div class="capaAlbum">
@@ -79,5 +75,6 @@
         </div>
     </section>
     <script src="project-assets/js/userDados/script.js"></script>
+    <script src="project-assets/js/scriptAside.js"></script>
 </body>
 </html>

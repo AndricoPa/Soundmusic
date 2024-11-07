@@ -18,7 +18,7 @@ body {
     flex-direction: column;
 }
 .navButton {
-    margin: 0.5rem;
+    margin: 0.75rem;
     padding: 1rem;
     transition: 1s;
     text-decoration: none;
@@ -61,7 +61,7 @@ body {
     right: 0.5rem;
     top: 6px;
 }
-.cardPlanos,.cardSongNow,.cardPlaylist {
+.cardSongNow,.cardPlaylist {
     text-align: center;
     background-color: #784fab;
     padding: 4rem;
