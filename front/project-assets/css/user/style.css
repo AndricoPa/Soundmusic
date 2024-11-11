@@ -17,16 +17,27 @@
 .username{
     color: #f1f1f1;
 }
-.playlist{
+.playlistUser{
     display: flex;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: 0.56s;
+}
+.playlistUser:hover{
+    background-color: gray;
 }
 .capaAlbum img{
     border-radius: 25%;
     margin-right: 2rem;
-    max-width: 100px;
+    width: 5rem;
+    height: 5rem;
 }
 .nomeAlbum{
     color: #f1f1f1;
+}
+.listasPlay{
+    color: #f1f1f1;  
+    margin-top: 2rem;   
 }

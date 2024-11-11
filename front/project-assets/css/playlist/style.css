@@ -1,14 +1,4 @@
-*{
-    padding: 0 ;
-    margin: 0;
-    box-sizing: border-box;
-}
-header{
-    background-color: #1f1f1f;
-        
-}
-
-.pasta h2 {
+#nome {
     text-align: center;
     color: antiquewhite;
 }
@@ -25,13 +15,13 @@ header{
     display: flex;
     text-align: center;
 }
-.foto{
+#foto{
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 20px;  
     
 }
-.foto img{
+#foto img{
     border-radius: 12px;
     /* box-shadow: 2px 3px 4px gold;  */
     border: rgb(79, 19, 85) 2px solid;

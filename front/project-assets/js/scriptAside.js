@@ -16,3 +16,6 @@ function config() {
 function planos() {
     window.location.href = 'planosIndex.html'
 }
+function musica() {
+    window.location.href = 'postSongIndex.html'
+}

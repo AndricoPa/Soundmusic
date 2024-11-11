@@ -69,8 +69,8 @@ app.get('/playlist', async (req, res) => {
 })
 
 app.post('/playlist', async (req, res) => {
-    const {id_usuario, nome_album, privado} = req.body
-    const playlist = await database('album').insert({id_usuario, nome_album, privado})
+    const {id_usuario, nome_album, privado, foto_album} = req.body
+    const playlist = await database('album').insert({id_usuario, nome_album, privado, foto_album})
     res.json({playlist})
 })
 
@@ -80,8 +80,17 @@ app.get('/playlist/:id', async (req, res) => {
     res.json({playlist})
 })
 
+app.get('/playlist/usuario/:id_usuario', async (req, res) => {
+    const { id_usuario } = req.params;
+    const playlist = await database('album').select('*').where({ id_usuario });
+    res.json({ playlist });
+});
+
+
 app.get('/musicas', async (req, res) => {
-    const musicas = await database('musica').select('*')
+    const musicas = await database('musica')
+    .select('musica.*', 'usuarios.username as usuarios')
+    .join('usuarios', 'musica.id_usuario', 'usuarios.id')
     res.json({musicas})
 })
 
@@ -95,4 +104,10 @@ app.get('/musicas/:id', async (req, res) => {
     const { id } = req.params
     const musica = await database('musica').select('*').where({ id })
     res.json({ musica })
+})
+
+app.get('/musicas/playlist/:id_album', async (req, res) => {
+    const {id_album} = req.params
+    const musicas = await database('musica').select('*').where({id_album})
+    res.json({musicas})
 })

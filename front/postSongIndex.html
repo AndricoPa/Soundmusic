@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project-assets/css/formSong/style.css">
+    <link rel="stylesheet" href="project-assets/css/styleAside.css">
+    <link rel="shortcut icon" href="project-assets/img/logoSoundMusic.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>SoundMusic</title>
+</head>
+<body>
+    <aside class="asideEsquerda">
+        <img src="project-assets/img/logoRoxo.png" alt="logo da SoundMusic" class="logo">
+        <nav class="navegador">
+            <a onclick="home()" class="navButton" id="home">
+                <i class="bi bi-house"></i>
+                <span>inicio</span>
+            </a>
+            <a onclick="biblioteca()" class="navButton" id="bibliotec">
+                <i class="bi bi-book"></i>
+                <span>sua biblioteca</span>
+            </a>
+            <a onclick="playlist()" class="navButton" id="playlist">
+                <i class="bi bi-headphones"></i>
+                <span>playlist</span>
+            </a>
+            <a onclick="accountConfig()" class="navButton" id="account">
+                <i class="bi bi-person-fill"></i>
+                <span>configurações conta</span>
+            </a>
+            <a onclick="config()" class="navButton" id="config">
+                <i class="bi bi-gear-fill"></i>
+                <span>configurações geral</span>
+            </a>
+            <a onclick="planos()" class="navButton" id="planos">
+                <i class="bi bi-star-fill"></i>
+                <span>ver planos</span>
+            </a>
+            <a onclick="musica()" class="navButton" id="musica">
+                <i class="bi bi-music-note"></i>
+                <span>postar musica</span>
+            </a>
+        </nav>
+    </aside>
+    <aside class="asideDireita">
+        <div class="icons">
+             <i class="bi bi-bell-fill"></i> <!-- no js fazer algo para identificar se a ou nao notificaçao e mudar o icone -->
+        <div class="buscador">
+            <i class="bi bi-search"></i>
+            <input type="text">
+         </div>
+            <i class="bi bi-person-circle"></i>
+        </div>
+        <div class="cardSongNow"> <!-- algo no js para identificar qual musica esta tocando e mostrar foto -->
+            <h1>ver musicas</h1>
+        </div>
+        <div class="cardSongNow"> <!-- algo no js para identificar qual musica esta tocando e mostrar foto -->
+            <h1>ver usuarios</h1>
+        </div>
+    </aside>
+    <section class="telaCentral">
+        <div class="title">
+            <h1>postar musica:</h1>
+        </div>
+        <form id="formularioMusica">
+            
+        <div class="camposForm">
+            <label for="">Foto da musica:</label>
+            <input type="text" id="foto" name="fotoMusica" required>
+        </div>
+
+        <div class="camposForm">
+            <label for="">Nome da musica:</label>
+            <input type="text" id="nome" name="nomeMusica" required>
+        </div>
+
+        <div class="camposForm">
+            <label for="">Link da musica:</label>
+            <input type="text" id="link" name="linkMusica" required>
+        </div>
+        <div class="camposForm">
+            <label for="">Genero da musica:</label>
+            <select name="genero" id="generoMusical">
+                <option value="">escolha um genero</option> 
+            </select>
+        </div>
+        <div class="camposForm">
+            <label for="">Nome do criador:</label>
+            <select name="user" id="usuarioMusica">
+                <option value="">escolha um usuario</option>
+            </select>
+        </div>
+        <div class="camposForm">
+            <label for="">Album da musica:</label>
+            <select name="album" id="albumMusica">
+                <option value="">Escolha um usuario primeiro</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Postar musica</button>
+        </div>
+    </form>
+    </section>
+    <script src="project-assets/js/formSong/script.js"></script>
+    <script src="project-assets/js/scriptAside.js"></script>
+</body>
+</html>

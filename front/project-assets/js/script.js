@@ -27,15 +27,15 @@ async function pushSong() {
     const dados = await response.json()
     console.log(dados);
     const cardSong = document.getElementById('musicas')
-    const maxSong = 10
+    const maxSong = 6
     cardSong.innerHTML = dados.musicas.slice(0, maxSong).map((song) => {
         return`
-        <div class="musicaCardSimples">
+        <div class="musicaCardSimples" onclick="location.href='${song.link_musica}'">
             <div class="musicaCardSimplesImg">
                 <img src="${song.foto_musica}" alt="Foto da musica ${song.nome_musica}">
             <div class="musicaCardSimplesImgTxt">
                 <p>${song.nome_musica}</p>
-                <h6>${song.id_usuario}</h6>
+                <h6>${song.usuarios}</h6>
             </div>
             </div>
             <div class="musicaCardSimplesIcon">

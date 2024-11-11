@@ -26,6 +26,7 @@ CREATE TABLE album(
     id INT PRIMARY KEY AUTO_INCREMENT,
     id_usuario INT NOT NULL,
     nome_album VARCHAR(50),
+    foto_album TEXT NOT NULL,
     privado BOOLEAN,
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
 );
