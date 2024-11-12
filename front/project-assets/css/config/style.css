@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: 0;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 500;
-}
-
-
 #cards,
 h1 {
     color: #000000;

@@ -19,3 +19,11 @@ function planos() {
 function musica() {
     window.location.href = 'postSongIndex.html'
 }
+function burguer() {
+    const burguer = document.getElementById('listaBurguer')
+    if(burguer.style.display === 'flex'){
+        burguer.style.display = 'none'
+    }else{
+        burguer.style.display = 'flex'
+    }
+}

@@ -1,6 +1,7 @@
-import express from 'express'
+import express from 'express';
 import knex from 'knex';
 import cors from 'cors';
+import bcrypt from 'bcrypt';
 const app = express()
 const port = 3000
 app.use(express.json())
@@ -11,8 +12,8 @@ const database = knex({
     connection: {
         host: '127.0.0.1', // <-- localhost
         port: 3306,
-        user: 'root',
-        password: '158575',
+        user: 'aluno',
+        password: 'senacrs',
         database: 'soundmusic',
     },
 });
@@ -36,7 +37,8 @@ app.get('/usuarios', async (req, res) => {
 
 app.post('/usuarios', async (req, res) => {
     const {id_plano, username, senha, foto_usuario} = req.body
-    const usuarios =  await database('usuarios').insert({id_plano, username, senha, foto_usuario})
+    const senhaCriptografada = await bcrypt.hash(senha, 10)
+    const usuarios =  await database('usuarios').insert({id_plano, username, senha : senhaCriptografada, foto_usuario})
     res.json({usuarios})
 })
 
@@ -45,6 +47,20 @@ app.get('/usuarios/:id', async (req, res) => {
     const usuario = await database('usuarios').select('*').where({id})
     res.json({usuario})
 })
+
+// app.post('/login', async (req, res) => {
+//     const {username , senha} = req.body
+//     const usuario = await database('usuarios').select('*').where({username}).first()
+//     if(!usuario){
+//         res.status(400).json('Usuario nao existe')
+//     }
+//     const senhaValida = await bcrypt.compare(senha, usuario.senha)
+//     if(!senhaValida){
+//         res.status(400).json('Usuario nao existe')
+//     }
+//     res.json("logado com sucesso")
+// })
+// deu erro o login 
 
 app.get('/generomusical', async (req, res) => {
     const genero = await database('genero_musical').select('*')
@@ -103,6 +119,8 @@ app.post('/musicas', async (req, res) => {
 app.get('/musicas/:id', async (req, res) => {
     const { id } = req.params
     const musica = await database('musica').select('*').where({ id })
+    .select('musica.*   ', 'usuarios.username as usuarios')
+    .join('usuarios', 'musica.id_usuario', 'usuarios.id')
     res.json({ musica })
 })
 

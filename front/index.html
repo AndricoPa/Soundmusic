@@ -5,11 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="project-assets/css/style.css">
     <link rel="stylesheet" href="project-assets/css/styleAside.css">
+    <link rel="stylesheet" href="project-assets/css/styleAsideMedia.css">
     <link rel="shortcut icon" href="project-assets/img/logoSoundMusic.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>SoundMusic</title>
 </head>
 <body>
+    <header class="cabecario">
+        <div class="burguer" onclick="burguer()">
+            &#9776;
+        </div>
+        <div class="pesquisador">
+            <input type="text">
+        </div>
+        <div class="iconPerfil">
+            <i class="bi bi-person-circle"></i>
+        </div>
+    </header>
+    <nav id="listaBurguer">
+        <ul>
+            <li><a onclick="home()">
+                <i class="bi bi-house"></i>
+                <span>inicio</span>
+            </a></li>
+            <li><a onclick="biblioteca()" >
+                <i class="bi bi-book"></i>
+                <span>sua biblioteca</span>
+            </a></li>
+            <li><a onclick="accountConfig()">
+                <i class="bi bi-person-gear"></i>
+                <span>configurações conta</span>
+            </a></li>
+            <li><a onclick="config()">
+                <i class="bi bi-gear"></i>
+                <span>configurações geral</span>
+            </a></li>
+            <li><a onclick="planos()">
+                <i class="bi bi-star"></i>
+                <span>ver planos</span>
+            </a></li>
+            <li><a onclick="musica()">
+                <i class="bi bi-file-earmark-music"></i>
+                <span>postar musica</span>
+            </a></li>
+
+        </ul>
+    </nav>
     <aside class="asideEsquerda">
         <img src="project-assets/img/logoRoxo.png" alt="logo da SoundMusic" class="logo">
         <nav class="navegador">
@@ -21,24 +62,20 @@
                 <i class="bi bi-book"></i>
                 <span>sua biblioteca</span>
             </a>
-            <a onclick="playlist()" class="navButton" id="playlist">
-                <i class="bi bi-headphones"></i>
-                <span>playlist</span>
-            </a>
             <a onclick="accountConfig()" class="navButton" id="account">
-                <i class="bi bi-person-fill"></i>
+                <i class="bi bi-person-gear"></i>
                 <span>configurações conta</span>
             </a>
             <a onclick="config()" class="navButton" id="config">
-                <i class="bi bi-gear-fill"></i>
+                <i class="bi bi-gear"></i>
                 <span>configurações geral</span>
             </a>
             <a onclick="planos()" class="navButton" id="planos">
-                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
                 <span>ver planos</span>
             </a>
             <a onclick="musica()" class="navButton" id="musica">
-                <i class="bi bi-music-note"></i>
+                <i class="bi bi-file-earmark-music"></i>
                 <span>postar musica</span>
             </a>
         </nav>
@@ -52,16 +89,19 @@
          </div>
             <i class="bi bi-person-circle"></i>
         </div>
-        <div class="cardSongNow"> <!-- algo no js para identificar qual musica esta tocando e mostrar foto -->
-            <h1>ver musicas</h1>
+        <div class="cardSongNow">
+            <i class="bi bi-music-note"></i>
+            <h1>ver todas as musicas</h1>
         </div>
-        <div class="cardSongNow"> <!-- algo no js para identificar qual musica esta tocando e mostrar foto -->
+        <div class="cardSongNow">
+            <i class="bi bi-person-fill"></i>
             <h1>ver usuarios</h1>
         </div>
     </aside>
     <section class="telaCentral">
         <h1 class="title">inicio</h1>  
         <section class="artistasRecomendados">
+            
             <h1>artistas recomendados:</h1>
             <div id="artistasSeguidos">
             </div>

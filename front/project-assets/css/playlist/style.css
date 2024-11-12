@@ -29,17 +29,26 @@
     height: 200px;
 }
 .musica img{
-    width: 55px;
-    height: 55px;
+    width: 100px;
+    height: 100px;
     border-radius: 5px;
+    margin-right: 1rem ;
 }
 .musica{ 
     padding: 10px;
     display: flex;
-    color: yellowgreen;
+    color: #784fab;
 }
 
-.musica span{
+.musica p{
     padding: 10px;
-    
+    font-size: 1.5rem;
+}
+
+.musica{
+    border-radius: 10px;
+}
+
+.musica:hover{
+    background-color: gray;
 }

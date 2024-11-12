@@ -11,7 +11,7 @@ CREATE TABLE usuarios(
     id INT PRIMARY KEY AUTO_INCREMENT,
     id_plano INT NOT NULL,
     username VARCHAR(50),
-    senha VARCHAR(50),
+    senha VARCHAR(255),
     email VARCHAR(60),
     telefone VARCHAR(50),
     foto_usuario TEXT,   
@@ -50,3 +50,4 @@ INSERT INTO planos (nome_plano, preco_1_mes) VALUES ('Familia', '25.99');
 
 INSERT INTO usuarios (id_plano, username, senha, foto_usuario) VALUES ('2', 'Fontana', '128Ve980', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkxKI8nHCtjr1IzghTNgCKLMAST64Izsuajg&s');
 
+INSERT INTO album (id_usuario, nome_album, foto_album) VALUES ('1', 'sertanejo de domingo', 'https://th.bing.com/th/id/OIP.UYzf41IKowWvtEh_iVjwSwExDM?rs=1&pid=ImgDetMain');

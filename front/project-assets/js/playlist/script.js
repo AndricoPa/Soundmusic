@@ -20,6 +20,15 @@ async function pushSong() {
     const dados = await res.json();
     console.log(dados);
     const listaMusica = document.getElementById('musicas')
-    
+    listaMusica.innerHTML = dados.musicas.map((musica) => {
+        return`
+            <div class="musica" onclick="window.location.href='${musica.link_musica}'">
+                <img src="${musica.foto_musica}" alt="">
+                <div>
+                    <p>${musica.nome_musica}</p>
+                </div>
+            </div>
+        `
+    }).join('')
 }
 pushSong()

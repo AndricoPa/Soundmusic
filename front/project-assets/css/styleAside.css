@@ -61,22 +61,14 @@ body {
     right: 0.5rem;
     top: 6px;
 }
-.cardSongNow,.cardPlaylist {
-    text-align: center;
+.cardSongNow,.cardSongNow{
     background-color: #784fab;
-    padding: 4rem;
+    padding: 2rem;
     border-radius: 10px;
     margin: 1rem;
     cursor: pointer;
-}
-.cardPlaylist{
-    display: flex;
-    align-items: center;
-}
-.cardPlaylistImg img{
-    width: 100px;
-    border-radius: 10px;
-}
+    text-align: center;
+}  
 .asideDireita {
     position: fixed;
     max-width: 20%;
@@ -85,4 +77,39 @@ body {
 .telaCentral {
     max-width: 58%;
     margin: auto;
+}
+.cabecario{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+.burguer{
+    color: #f1f1f1;
+    font-size: 3.5rem;
+}
+.pesquisador input{
+    width: 60vw;
+    padding: 0.3rem;
+    font-size: 1.4  rem;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.iconPerfil i{
+    font-size: 2.5rem;
+}
+#listaBurguer{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+#listaBurguer ul{
+    list-style: none;
+}
+#listaBurguer ul li{
+    margin: 2rem;
+}
+#listaBurguer ul li a{
+    color: white;
+    font-size: 1.5rem;
 }
