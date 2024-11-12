@@ -85,8 +85,8 @@ app.get('/playlist', async (req, res) => {
 })
 
 app.post('/playlist', async (req, res) => {
-    const {id_usuario, nome_album, privado, foto_album} = req.body
-    const playlist = await database('album').insert({id_usuario, nome_album, privado, foto_album})
+    const {id_usuario, nome_album, foto_album} = req.body
+    const playlist = await database('album').insert({id_usuario, nome_album, foto_album})
     res.json({playlist})
 })
 

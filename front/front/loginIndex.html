@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Rammetto+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project-assets/css/login/style.css">
+    <link rel="shortcut icon" href="project-assets/img/logoSoundMusic.png" type="image/x-icon">
+    <title>Página Cadastro</title>
+</head>
+<body>
+<i class="bi bi-arrow-return-left" onclick="home()"></i>
+    <section class="cad-login" id="login">
+
+        <div class="form-card-lado-login" >
+                <div class="logo">
+                    <img src="project-assets/img/Images/logo-removebg-preview.png" alt="">
+                </div>
+                
+                <div class="tittle-top">
+                    <p id="music2">sound</p>
+                    <p id="music">music</p>
+                </div>
+
+            <div class="left-login">
+                <div class="tittle-login">
+                    <h1>Login</h1>
+                </div>
+
+                <div class="form-login">
+                    <form action="" id="formularioLogin">
+                        <label for="name" id="name">Nome:</label>
+
+                        <div class="input-name">
+                            <input type="text" name="input-name" id="input-name" placeholder="Insira seu nome aqui" required>
+                        </div>
+
+                        <label for="Senha" id="Senha">Senha:</label>
+
+                        <div class="input-senha">
+                            <input type="text" name="Senha" id="Senha-usuario" placeholder="Insira sua senha aqui" required>
+                            <i class="bi bi-eye-slash-fill" onclick="olhar()"></i>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form2-login">
+                    
+                        <form action="" id="button-me-lembre">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <label for="checkbox" id="checkbox">me-lembre</label>
+                        </form>
+
+                        <div class="text-link-login">
+                            <p>esqueceu a senha?</p>
+                        </div>
+                
+                </div>
+
+                <div class="button-login">
+                    <div class="text-button-login">
+                        <button>Log In</button>
+                    </div>
+                </div>
+
+                <div class="text-ou">
+
+                    <div class="retangulo-ou">
+
+                    </div>
+
+                    <h1>Ou</h1>
+
+                    <div class="retangulo-ou">
+                        
+                    </div>
+                </div>
+
+                <div class="text-se-conecte">
+                    <h1>se conecte com</h1>
+                </div>
+                
+                <div class="icones-tel-email">
+
+                    
+                    <div class="icone-tel">
+                        <p>Telefone</p>
+                    </div>
+                    
+                    <div class="icone-email">
+                        <p>Google</p>
+                    </div>
+
+                </div>
+                
+                <i class="bi bi-telephone-fill" id="icone-tel1"></i>
+                <i class="bi bi-envelope" id="icone-envelope1"></i>
+                
+            </div>
+
+            <div class="rigth-not-cadastro">
+                <div class="text1-right-not-cad">
+                    <h2>Não tem cadastro?</h2>
+                </div>
+        
+                <div class="text2-right-not-cad">
+                    <p>Não perca a chance de explorar um universo musical único!
+                        Cadastre-se agora e desbloqueie todas as nossas funcionalidades
+                        para criar e curtir música como nunca antes.</p>
+                </div>
+        
+                <div class="button-cadastre-se">
+                    <button onclick="ligarCadastro()">Cadastre-se</button>
+                </div>
+        
+            </div>
+
+        </div>
+        
+
+    </section>
+
+    <section id="cadastro" style="display: none;">
+        <div class="form-faca-cad" >
+
+            <div class="logo2">
+                <img src="project-assets/img/Images/logo-removebg-preview.png" alt="">
+            </div>
+
+            <div class="tittle-top2">
+                <p id="music4">sound</p>
+                <p id="music3">music</p>
+            </div>
+
+            <div class="lado-ja-possue-cad">
+                <div class="left-text1">
+                    <p>Já possui cadastro?</p>
+                </div>
+
+                <div class="left-text2">
+                    <p>Clique no botão a baixo e faça login.</p>
+                </div>
+
+                <div class="button-login-ja-possue-cad">
+                    <button onclick="ligarLogin()">Log In</button>
+                </div>
+            </div>
+
+            <div class="right-faca-cad">
+
+                <div class="icons-tel-google-cad">
+                    <i class="bi bi-google" id="icone-google"></i>
+                    <i class="bi bi-telephone-fill" id="iconeTelCad"></i>
+                </div>
+
+                <div class="text1-faca-cad">
+                    <p>Faça o seu cadastro</p>
+                </div>
+
+                <div class="forms">
+                    <form action="" id="formularioCadastro">
+                    <label for="name-user">Nome de Usuário:</label>
+
+                    <div class="input-name-user">
+                        <input type="text" name="name-user" id="name-user" placeholder="Insira seu nome aqui" required>
+                    </div>
+
+                    <label for="senha-user">Senha:</label>
+                    <div class="input-senha-user">
+                        <input type="password" name="senha-user" id="senha-user" placeholder="Insira sua senha aqui" required>
+                        <i class="bi bi-eye-slash-fill" onclick="olho()"></i>
+                    </div>
+
+                    <label for="urlFoto">Url foto:</label>
+                    <div class="input-url-foto">
+                        <input type="text" placeholder="Insira a url da sua foto" id="url-user">
+                    </div>
+
+                    <div class="button-create-cad">
+                        <button type="submit">Criar</button>
+                    </div>
+                </form>
+                </div>
+
+
+                <div class="text-acessibilidades">
+                    <p>Nosso site é um espaço acolhedor e acessível, 
+                    projetado para que todos, independentemente de suas 
+                    habilidades, possam navegar e desfrutar da informação com 
+                    facilidade e conforto.
+                    </p>
+                </div>
+
+                <div class="button-ver-acessibilidades">
+                    <button>Ver acessibilidades</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <div class="rain rain1"></div>
+  <div class="rain rain2">
+    <div class="drop drop2"></div>
+  </div>
+  <div class="rain rain3"></div>
+  <div class="rain rain4"></div>
+  <div class="rain rain5">
+    <div class="drop drop5"></div>
+  </div>
+  <div class="rain rain6"></div>
+  <div class="rain rain7"></div>
+  <div class="rain rain8">
+    <div class="drop drop8"></div>
+  </div>
+  <div class="rain rain9"></div>
+  <div class="rain rain10"></div>
+  <div class="drop drop11"></div>
+  <div class="drop drop12"></div>
+  <div id="canvas"></div>
+
+
+    <script src="project-assets/js/login/script.js"></script>
+    <script src="project-assets/js/login/scriptForm.js"></script>
+</body>
+</html>

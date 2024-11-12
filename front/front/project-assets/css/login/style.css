@@ -1,0 +1,580 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+.bi-arrow-return-left {
+  color: #f1f1f1;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.logo img{
+    width: 5%;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 350px;
+}
+
+.cad-login{
+    margin-left: 18rem;
+    margin-top: 5rem;
+    width: 65%;
+    height: 600px;
+}
+
+.form-card-lado-login{
+    display: flex;
+    position: relative;
+}
+
+.tittle-top{
+    position: absolute;
+    top: 15px;
+    right: 445px;
+    display: flex;
+    gap: 22%;
+    font-size: 1.5em;
+    font-family: "Bowlby One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#music{
+    color: white;
+}
+
+#music2 {
+    color: #784FAB;
+    z-index: 1;
+}
+
+
+
+.left-login{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
+    background-color: white;
+    height: 600px;
+    width: 50%;
+    position: relative;
+}
+
+.form-login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.form-login form label{
+    color: black;
+}
+
+.form-login form input{
+    background-color: #d1cbcb;
+    height: 40px;
+    width: 16rem;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+}
+
+
+.tittle-login h1{
+    color: #784FAB;
+    font-family: "Bowlby One", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.rigth-not-cadastro{
+    background-color: #784fab;
+    width: 50%;
+    padding-top: 3rem;
+}
+.input-senha, .input-name{
+    position: relative;
+}
+
+.input-senha input, .input-name input{
+    font-size: 0.8em;
+}
+
+.input-senha input:focus, .input-name input:focus{
+    outline: 3px solid #784FAB;
+}
+
+.bi-eye-slash-fill{
+    position: absolute;
+    right: 18px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.form2-login{
+    display: flex;
+    gap: 3.7rem;
+    font-size: 0.8em;
+}
+
+.text-link-login p{
+    color: #a16ce6;
+}
+
+.text-link-login p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#button-me-lembre{
+    display: flex;
+    gap: 6px;
+}
+
+.text-button-login button{
+    width: 15rem;
+    height: 40px;
+    background-color: #a16ce6;
+    border: none; 
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.retangulo-ou{
+    width: 20px;
+    background-color: gray;
+    height: 1px;
+}
+
+.text-ou{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.text-ou h1{
+    font-size: 1em;
+}
+
+.form2-login{
+    margin-bottom: 1.6rem;
+}
+
+.text-se-conecte h1{
+    font-weight: 200;
+    font-size: 1.1em;
+}
+
+.text-ou h1{
+    font-weight: 200;
+}
+
+.icones-tel-email{
+    display: flex;
+    gap: 3rem;
+    position: relative;
+    margin-top: 4.6rem;
+}
+
+.icone-tel p, .icone-email p{
+    font-size: 0.8em;
+}
+
+.bi-telephone-fill, .bi-envelope, #icone-google{
+    color: white;
+    background-color: #a16ce6;
+    padding: 7px 8px;
+    border-radius: 100rem;
+}
+
+.bi-telephone-fill:hover, .bi-envelope:hover{
+    cursor: pointer;
+    transition: background-color 0.6s;
+    background-color: #2a104b;
+    transform: scale(1.02);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#icone-tel1{
+    position: absolute;
+    right: 285px;
+    bottom: 50px;
+}
+
+#icone-envelope1{
+    position: absolute;
+    bottom: 50px;
+    right: 195px;
+}
+
+.rigth-not-cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.text1-right-not-cad h2{
+    color: white;
+    font-size: 2.1em;
+    margin-top: 2rem;
+    font-family: "Caprasimo", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.button-cadastre-se button{
+    background-color: #784FAB;
+    width: 15rem;
+    height: 65px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+    border: 2px solid white;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 5rem;
+}
+
+.text2-right-not-cad p{
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.button-cadastre-se button:hover, .text-button-login button:hover{
+    transition: background-color 0.6s;
+    background-color: #2a104b;
+}
+
+/* BACKGROUND ANIMADO */
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: #1a032b;
+  overflow: hidden;
+  perspective: 10rem;
+}
+
+#canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.rain {
+  position: absolute;
+  width: 1rem;
+  height: 10rem;
+  background: #ffffff;
+  border-radius: 20%;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+
+.rain1 {
+  left: 5rem;
+  top: 2rem;
+  animation: raining 2s linear infinite both;
+}
+
+.rain2 {
+  left: 15rem;
+  top: 10rem;
+  animation: raining 3s linear infinite both;
+}
+
+.drop2 {
+  top: 12rem;
+  animation: raining 4s linear infinite both -2s;
+}
+
+.rain3 {
+  left: 5rem;
+  top: 35rem;
+  animation: raining 3s linear infinite both;
+}
+
+.rain4 {
+  right: 23rem;
+  top: 6rem;
+  animation: raining 4s linear infinite both;
+}
+
+.rain5 {
+  left: 25rem;
+  top: 47rem;
+  animation: raining 3s linear infinite both -3s;
+}
+
+.drop5 {
+  top: -6rem;
+  animation: raining 2s linear infinite both;
+}
+
+.rain6 {
+  right: 10rem;
+  top: 34rem;
+  animation: raining 3s linear infinite both;
+}
+
+.rain7 {
+  left: 34rem;
+  top: 10rem;
+  animation: raining 2s linear infinite both -5s;
+}
+
+.rain8 {
+  right: 25rem;
+  top: 40rem;
+  animation: raining 3s linear infinite both;
+}
+
+.drop8 {
+  top: -7rem;
+  animation: raining 4s linear infinite both -6s;
+}
+
+.rain9 {
+  right: 5rem;
+  top: 15.5rem;
+  animation: raining 3s linear infinite both;
+}
+
+.rain10 {
+  left: 24rem;
+  top: -4rem;
+  animation: raining 2s linear infinite both -3s;
+}
+
+.drop11 {
+  right: 17rem;
+  top: 20rem;
+  animation: raining 3s linear infinite both;
+}
+
+.drop12 {
+  right: 15rem;
+  top: 50rem;
+  animation: raining 4s linear infinite both -1s;
+}
+
+@keyframes raining {
+  from {
+    transform: translateY(-1200px);
+  }
+  to {
+    transform: translateY(869px);
+  }
+}
+
+/* CSS to tela translate */
+
+.form-faca-cad{
+  width: 65%;
+  height: 600px;
+  margin-left: 18rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  position: relative;
+}
+
+.lado-ja-possue-cad{
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  background-color: #784FAB;
+  height: 600px;
+  width: 50%;
+}
+
+.right-faca-cad{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.left-text1 p{
+  font-size: 2.2em;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.left-text2 p{
+  color: white;
+  font-size: 1.5em;
+  letter-spacing: 0.6px;
+}
+
+.button-login-ja-possue-cad button{
+    background-color: #784FAB;
+    width: 20rem;
+    height: 65px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+    border: 2px solid white;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 5rem;
+}
+
+.button-login-ja-possue-cad button:hover, .button-ver-acessibilidades button:hover, .button-create-cad button:hover{
+    transition: background-color 0.6s;
+    background-color: #2a104b;
+}
+
+.right-faca-cad{
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  background-color: white;
+  height: 600px;
+  width: 50%;
+  position: relative;
+}
+
+.text1-faca-cad p{
+  font-size: 1.7em;
+  color: #784FAB;
+  letter-spacing: -1px;
+  font-family: "Bowlby One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    padding-bottom: 1.4rem;
+}
+
+.forms form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.forms form label{
+  font-size: 1.3em;
+  font-weight: 600;
+  color: black;
+}
+
+.forms form input{
+  background-color: #d1cbcb;
+  height: 40px;
+  width: 16rem;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+  font-size: 0.8em;
+}
+
+.forms form input:focus{
+  outline: 3px solid #784FAB;
+}
+
+.button-create-cad button{
+  width: 9rem;
+  height: 50px;
+  background-color: #784FAB;
+  border: none; 
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.text-acessibilidades p{
+  padding-left: 2rem;
+  padding-right: 1rem;
+  font-size: 1em;
+  color: black;
+  font-weight: 500;
+}
+
+.button-ver-acessibilidades button{
+  width: 9rem;
+  height: 40px;
+  background-color: #5916b1;
+  border: none; 
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  position: absolute;
+  left: 32px;
+  bottom: 25px;
+}
+
+.input-name-user, .input-senha-user{
+  position: relative;
+}
+
+.logo2 img{
+  width: 5%;
+  height: 50px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 350px;
+}
+
+.tittle-top2{
+  position: absolute;
+  top: 15px;
+  right: 450px;
+  display: flex;
+  gap: 22%;
+  font-size: 1.5em;
+  font-family: "Bowlby One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#music3{
+  color: #784FAB;
+  z-index: 1;
+}
+
+#music4{
+  color: white;
+  z-index: 1;
+}
+
+#iconeTelCad {
+  position: absolute;
+  top: 105px;
+  right: 210px;
+}
+
+#icone-google{
+  position: absolute;
+  top: 105px;
+  right: 280px;
+}

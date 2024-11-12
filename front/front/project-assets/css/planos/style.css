@@ -1,0 +1,91 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#1c1c1c;
+}
+.bi-arrow-return-left{
+    color: #f1f1f1;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.planos{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.card{
+    width: 20%;
+    background-color: #A9A9A9;
+    padding-block: 100px;
+    margin: 30px;
+    position: relative;
+    border-top: #784fab 1rem solid;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card p{
+    font-size: 30px;
+}
+
+.card ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+ min-height: 60%;   
+}
+
+.card ul li{
+display: flex;
+justify-content: start;
+align-items: center;
+gap: 1rem;
+text-align: start;
+padding: .7rem;
+}
+.card ul li p {
+    font-size: 16px;
+}
+
+
+.card button {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 50%;
+    transition: background-color 0.3s;
+}
+
+.card button:hover{
+transform: scale(1.1);
+transition: 0.5;
+}
+
+.botao{
+    margin-top: 80px;
+  
+}
+
+.icones{
+    color: #784fab;
+    font-size: 10px;
+    position: absolute;
+    left: 0;
+}
+.card button {
+    margin-top: 20px;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project-assets/css/configUser/style.css">
+    <link rel="stylesheet" href="project-assets/css/styleAside.css">
+    <link rel="stylesheet" href="project-assets/css/styleAsideMedia.css">
+    <link rel="shortcut icon" href="project-assets/img/logoSoundMusic.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>SoundMusic</title>
+</head>
+<body>
+    <header class="cabecario">
+    <div class="burguer" onclick="burguer()">
+        &#9776;
+    </div>
+    <div class="pesquisador">
+        <input type="text">
+    </div>
+    <div class="iconPerfil">
+        <i class="bi bi-person-circle" onclick="login()"></i>
+    </div>
+    </header>
+    <nav id="listaBurguer">
+        <ul>
+            <li><a onclick="home()">
+                    <i class="bi bi-house"></i>
+                    <span>inicio</span>
+                </a></li>
+            <li><a onclick="biblioteca()">
+                    <i class="bi bi-book"></i>
+                    <span>sua biblioteca</span>
+                </a></li>
+            <li><a onclick="accountConfig()">
+                    <i class="bi bi-person-gear"></i>
+                    <span>configurações conta</span>
+                </a></li>
+            <li><a onclick="config()">
+                    <i class="bi bi-gear"></i>
+                    <span>configurações geral</span>
+                </a></li>
+            <li><a onclick="planos()">
+                    <i class="bi bi-star"></i>
+                    <span>ver planos</span>
+                </a></li>
+            <li><a onclick="musica()">
+                    <i class="bi bi-file-earmark-music"></i>
+                    <span>postar musica</span>
+                </a></li>
+    
+        </ul>
+    </nav>
+    <aside class="asideEsquerda">
+        <img src="project-assets/img/logoRoxo.png" alt="logo da SoundMusic" class="logo">
+        <nav class="navegador">
+            <a onclick="home()" class="navButton" id="home">
+                <i class="bi bi-house"></i>
+                <span>inicio</span>
+            </a>
+            <a onclick="biblioteca()" class="navButton" id="bibliotec">
+                <i class="bi bi-book"></i>
+                <span>sua biblioteca</span>
+            </a>
+            <a onclick="accountConfig()" class="navButton" id="account">
+                <i class="bi bi-person-gear"></i>
+                <span>configurações conta</span>
+            </a>
+            <a onclick="config()" class="navButton" id="config">
+                <i class="bi bi-gear"></i>
+                <span>configurações geral</span>
+            </a>
+            <a onclick="planos()" class="navButton" id="planos">
+                <i class="bi bi-star"></i>
+                <span>ver planos</span>
+            </a>
+            <a onclick="musica()" class="navButton" id="musica">
+                <i class="bi bi-file-earmark-music"></i>
+                <span>postar musica</span>
+            </a>
+        </nav>
+    </aside>
+    <aside class="asideDireita">
+        <div class="icons">
+            <i class="bi bi-bell-fill"></i>
+            <!-- no js fazer algo para identificar se a ou nao notificaçao e mudar o icone -->
+            <div class="buscador">
+                <i class="bi bi-search"></i>
+                <input type="text">
+            </div>
+            <i class="bi bi-person-circle" onclick="login()"></i>
+        </div>
+        <div class="cardSongNow" onclick="musicasAll()">
+            <i class="bi bi-music-note"></i>
+            <h1>ver todas as musicas</h1>
+        </div>
+        <div class="cardSongNow">
+            <i class="bi bi-person-fill"></i>
+            <h1>ver usuarios</h1>
+        </div>
+    </aside>
+    <section class="telaCentral">
+        <div class="tudo">
+            <div class="parteDeCima">
+                <div class="foto">👤</div>
+                <h2>Configurações de Conta</h2>
+            </div>
+
+            <div class="sessão">
+                <div class="sessãoTitulo"><p>Nome de usuário </p></div>
+                <div class="subTitulo"> <p>Alterar foto de perfil<i class="bi bi-chevron-right"></i></p></div>
+            
+            </div>
+
+            <div class="sessão">
+                <div class="sessãoTitulo">
+                <p>Email</p>
+                </div>
+                <div class="subTitulo"><p>
+                    Joãozinho1234@gmail.com
+                </p>
+
+                </div>
+            </div>
+
+            <div class="sessão">
+                <div class="sessãoTitulo">
+                    <p>Tipo de assinatura</p> 
+                </div>
+                <div class="subTitulo"><p>
+                    Free, Universitária, Família, Premium
+
+                </p>
+                </div>
+            </div>
+
+            <div class="sessão">
+                <div class="sessãoTitulo">
+                    <p> Histórico de pagamentos</p>
+
+                <i class="bi bi-chevron-right"></i>
+            </div>
+
+            <div class="sessão">
+                <div class="sessãoTitulo"><p>Senhas</p></div>
+                <div class="subTitulo">
+                    <p>Altere sua senha <i class="bi bi-chevron-right"></i> </p>
+                    <div class="auth-fatores">
+                        <p>Autenticação em dois fatores</p>
+                        <label class="switch">
+                            <input type="checkbox" id="slider">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <p>Configurações de privacidade <i class="bi bi-chevron-right"></i></p>
+                </div>
+            </div>
+
+            <div class="sessão">
+                <div class="sessãoTitulo"><p>Preferências de reprodução</p></div>
+                <div class="subTitulo">
+                    
+                        <p>Qualidade de streaming e download (Alta, Média, Baixa) <i class="bi bi-chevron-right"></i></p>
+                    <div class="crossfade">
+                        <p>Configurações de crossfade</p>
+                        <label class="switch">
+                            <input type="checkbox" id="crossfade-slider">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+</section>
+    <script src="project-assets/js/scriptAside.js"></script>
+</body>
+</html>
